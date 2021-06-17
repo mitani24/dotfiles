@@ -1,0 +1,70 @@
+[user]
+	name = mitani24
+	email = h.mitani@ashita-team.com
+[alias]
+	a = add
+	b = branch
+	ba = branch --all
+	bd = branch --delete
+	bm = branch --merged
+	br = branch --remotes
+	co = checkout
+	cob = checkout -b
+	ci = commit
+	cia = commit --amend
+	ciam = commit --amend --message
+	ciem = commit --allow-empty --message
+	cim = commit --message
+	cdf = clean -d --force
+	cl = config --list
+	config-global = "config --global"
+	config-local = "config --local"
+	cp = cherry-pick
+	d = diff
+	fixup = commit --fixup
+	g = log --graph --date=short --decorate=short --pretty=format:'%Cgreen%h %Creset%cd %C(cyan)%cn %Cred%d %Creset%s'
+	ga = g --all
+	mg = merge
+	pullp = pull --prune
+	pushu = push --set-upstream
+	pushf = push --force-with-lease
+	rb = rebase
+	rba = rebase --abort
+	rbc = rebase --continue
+	rbi = rebase --interactive
+	rs = reset
+	rsh = reset --hard
+	s = status
+	ss = status --short
+	st = stash
+	sta = stash apply
+	stl = stash list
+	stp = stash pop
+	t = tag
+	ta = tag --annotate
+	delete-merged-branches = "!f() { git checkout $1; git branch --merged | egrep -v '\\*|develop|main|master' | xargs git branch -d; }; f"
+	delete-local-branches = "!f() { git checkout $1; git branch | egrep -v '\\*|develop|main|master' | xargs git branch -D; }; f"
+	delete-remote-branch = push --delete origin
+	show-default-branch = "!f() { git symbolic-ref --short refs/remotes/origin/HEAD | sed 's@^origin/@@'; }; f"
+	show-pr = "!f() { git log --merges --oneline --reverse --ancestry-path $1...master | grep 'Merge pull request #' | head -n 1; }; f"
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+[rebase]
+	autosquash = true
+[init]
+	defaultBranch = main
+[core]
+	editor = code --wait
+	excludesfile = ~/.gitignore
+[url "https://mitani24@github.com/"]
+	insteadOf = https://github.com/
+[url "https://tapioca24@github.com/tapioca24/"]
+	insteadOf = https://github.com/tapioca24/
+[ghq]
+	user = mitani24
+	root = ~/ghq/work
+[ghq "https://github.com/tapioca24"]
+	root = ~/ghq/hobby
