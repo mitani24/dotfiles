@@ -9,3 +9,4 @@ rules:
   preset-ja-technical-writing:
     no-exclamation-question-mark: false
     ja-no-mixed-period: false
+    max-kanji-continuous-len: false
