@@ -17,3 +17,11 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/mitani24/dotfiles/main/i
 ```sh
 dotfiles/link.sh
 ```
+
+## Initialize
+
+HomeBrew とパッケージをインストールします。
+
+```sh
+dotfiles/initialize.sh
+```
