@@ -8,7 +8,7 @@
 ## Installation
 
 リポジトリをクローンします。\
-リポジトリは `$HOME/.dotfiles` に展開されます。
+リポジトリは `~/.dotfiles` に展開されます。
 
 ```sh
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/mitani24/dotfiles/main/install.sh)"
@@ -16,7 +16,7 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/mitani24/dotfiles/main/i
 
 ## Creating symlinks
 
-`.dotfiles/rcrc` を設定としてシンボリックリンクを作成します。
+`~/.dotfiles/rcrc` を設定としてシンボリックリンクを作成します。
 
 ```sh
 env RCRC=$HOME/.dotfiles/rcrc rcup
