@@ -1,1 +1,1 @@
-EXCLUDES="README.md LICENSE install.sh link.sh initialize.sh assets"
+EXCLUDES="README.md LICENSE install.sh setup.sh assets"
