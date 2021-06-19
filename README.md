@@ -19,7 +19,7 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/mitani24/dotfiles/main/i
 `~/.dotfiles/rcrc` を設定としてシンボリックリンクを作成します。
 
 ```sh
-env RCRC=$HOME/.dotfiles/rcrc rcup
+env RCRC=~/.dotfiles/rcrc rcup
 ```
 
 ## Setup
