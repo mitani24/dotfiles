@@ -1,27 +1,39 @@
 # dotfiles
 
+## Preparation
+
+1. [HomeBrew](https://brew.sh/index_ja) をインストール
+2. `brew install rcm`
+
 ## Installation
 
 リポジトリをクローンします。\
-リポジトリは `$HOME/dotfiles` に展開されます。
+リポジトリは `$HOME/.dotfiles` に展開されます。
 
 ```sh
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/mitani24/dotfiles/main/install.sh)"
 ```
 
-## Link
+## Creating symlinks
 
-各設定ファイルのシンボリックリンクを作成します。\
-既存のファイルは上書きされます。
+`.dotfiles/rcrc` を設定としてシンボリックリンクを作成します。
 
 ```sh
-dotfiles/link.sh
+env RCRC=$HOME/.dotfiles/rcrc rcup
 ```
 
-## Initialize
+## Setup
 
-HomeBrew とパッケージをインストールします。
+必要なファイルをインストールします。
 
 ```sh
-dotfiles/initialize.sh
+dotfiles/setup.sh
+```
+
+## Installation HomeBrew packages
+
+`~/.Brewfile` に基づいて HomeBrew パッケージをインストールします。
+
+```sh
+brew bundle --global
 ```
