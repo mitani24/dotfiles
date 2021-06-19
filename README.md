@@ -27,7 +27,7 @@ env RCRC=$HOME/.dotfiles/rcrc rcup
 必要なファイルをインストールします。
 
 ```sh
-dotfiles/setup.sh
+~/.dotfiles/setup.sh
 ```
 
 ## Installation HomeBrew packages
