@@ -21,8 +21,13 @@ function upgrade-npm-global-packages() {
   run-task "npm update -g"
 }
 
+function update-gibo() {
+  run-task "gibo update"
+}
+
 function hello() {
   upgrade-brew &&
+  update-gibo &&
   upgrade-zinit &&
   upgrade-yarn-global-packages &&
   upgrade-npm-global-packages
