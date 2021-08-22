@@ -47,5 +47,6 @@ source ${ZSH_HOME}/z.zsh
 source ${ZSH_HOME}/todoist.zsh
 source ${ZSH_HOME}/psql.zsh
 source ${ZSH_HOME}/ghcup.zsh
+source ${ZSH_HOME}/sclang.zsh
 source ${ZSH_HOME}/functions.zsh
 source ${ZSH_HOME}/alias.zsh
