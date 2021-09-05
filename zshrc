@@ -45,6 +45,7 @@ source ${ZSH_HOME}/direnv.zsh
 source ${ZSH_HOME}/gh-completion.zsh
 source ${ZSH_HOME}/z.zsh
 source ${ZSH_HOME}/todoist.zsh
+source ${ZSH_HOME}/deno.zsh
 source ${ZSH_HOME}/psql.zsh
 source ${ZSH_HOME}/ghcup.zsh
 source ${ZSH_HOME}/sclang.zsh
