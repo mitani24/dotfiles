@@ -13,6 +13,10 @@ function upgrade-zinit() {
   run-task "zinit update"
 }
 
+function update-anyenv() {
+  run-task "anyenv update"
+}
+
 function upgrade-yarn-global-packages() {
   run-task "yarn global upgrade"
 }
@@ -25,10 +29,11 @@ function update-gibo() {
   run-task "gibo update"
 }
 
-function hello() {
+function update-all() {
   upgrade-brew &&
-  update-gibo &&
   upgrade-zinit &&
+  update-anyenv &&
+  update-gibo &&
   upgrade-yarn-global-packages &&
   upgrade-npm-global-packages
 }
