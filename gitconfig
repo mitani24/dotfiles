@@ -28,6 +28,8 @@
 	pullp = pull --prune
 	pushu = push --set-upstream
 	pushf = push --force-with-lease
+	re = restore
+	res = restore --staged
 	rb = rebase
 	rba = rebase --abort
 	rbc = rebase --continue
@@ -40,6 +42,8 @@
 	sta = stash apply
 	stl = stash list
 	stp = stash pop
+	sw = switch
+	swc = switch --create
 	t = tag
 	ta = tag --annotate
 	delete-merged-branches = "!f() { git checkout $1; git branch --merged | egrep -v '\\*|develop|main|master' | xargs git branch -d; }; f"
