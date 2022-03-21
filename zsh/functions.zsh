@@ -4,7 +4,6 @@ function run-task() {
 }
 
 function upgrade-brew() {
-  run-task "brew doctor" &&
   run-task "brew upgrade"
 }
 
