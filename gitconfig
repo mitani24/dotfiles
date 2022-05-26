@@ -72,3 +72,5 @@
 	root = ~/ghq/work
 [ghq "https://github.com/tapioca24"]
 	root = ~/ghq/hobby
+[pull]
+	rebase = false
