@@ -1,4 +1,5 @@
 alias ls="exa"
+alias grep="rg"
 alias ll="ls -l"
 alias chrome='open -a "Google Chrome"'
 alias dc="docker compose"
