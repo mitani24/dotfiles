@@ -1,3 +1,5 @@
+fpath+=("$(brew --prefix)/share/zsh/site-functions")
+
 autoload -U promptinit; promptinit
 
 zstyle ':prompt:pure:path' color blue
