@@ -3,38 +3,51 @@ function run-task() {
   eval $1
 }
 
-function upgrade-brew() {
-  run-task "brew upgrade"
+function update-brew() {
+  if type brew > /dev/null 2>&1; then
+    run-task "brew update"
+    run-task "brew upgrade"
+  fi
 }
 
-function upgrade-zinit() {
-  run-task "zinit self-update" &&
-  run-task "zinit update"
+function update-zinit() {
+  if type zinit > /dev/null 2>&1; then
+    run-task "zinit self-update" &&
+    run-task "zinit update"
+  fi
 }
 
 function update-anyenv() {
-  run-task "anyenv update"
+  if type anyenv > /dev/null 2>&1; then
+    run-task "anyenv update"
+  fi
 }
 
-function upgrade-yarn-global-packages() {
-  run-task "yarn global upgrade"
+function update-yarn-global-packages() {
+  if type yarn > /dev/null 2>&1; then
+    run-task "yarn global upgrade"
+  fi
 }
 
-function upgrade-npm-global-packages() {
-  run-task "npm update -g"
+function update-npm-global-packages() {
+  if type npm > /dev/null 2>&1; then
+    run-task "npm update -g"
+  fi
 }
 
 function update-gibo() {
-  run-task "gibo update"
+  if type gibo > /dev/null 2>&1; then
+    run-task "gibo update"
+  fi
 }
 
 function update-all() {
-  upgrade-brew &&
-  upgrade-zinit &&
+  update-brew &&
+  update-zinit &&
   update-anyenv &&
   update-gibo &&
-  upgrade-yarn-global-packages &&
-  upgrade-npm-global-packages
+  update-yarn-global-packages &&
+  update-npm-global-packages
 }
 
 # ghq 管理のリポジトリを検索してエディタで開く
