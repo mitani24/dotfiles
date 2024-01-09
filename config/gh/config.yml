@@ -12,3 +12,4 @@ aliases:
     prc: pr create --assignee @me --label team-unicorn
     prr: pr list --search "label:team-unicorn label:ready_for_release -status:failure"
     prm: pr list --search "label:team-unicorn label:ready_for_merge -status:failure"
+version: "1"
