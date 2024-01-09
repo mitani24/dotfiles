@@ -1,4 +1,4 @@
-alias ls="exa"
+alias ls="eza"
 alias grep="rg"
 alias ll="ls -l"
 alias chrome='open -a "Google Chrome"'
