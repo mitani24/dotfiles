@@ -11,6 +11,7 @@ alias todo-work='todoist list --filter="#work"'
 alias todo-home='todoist list --filter="#home"'
 alias todo-personal='todoist list --filter="#personal"'
 alias co="anyframe-widget-checkout-git-branch"
+alias y="yarn"
 
 zle -N open-ghq-repository
 bindkey '^t' open-ghq-repository
