@@ -69,12 +69,16 @@
 	insteadOf = https://github.com/tapioca24/
 [url "https://splatoonstat@github.com/splatoonstat/"]
 	insteadOf = https://github.com/splatoonstat/
+[url "https://splatoonstat@github.com/inkwavesystem/"]
+	insteadOf = https://github.com/inkwavesystem/
 [ghq]
 	user = mitani24
 	root = ~/ghq/work
 [ghq "https://github.com/tapioca24"]
 	root = ~/ghq/hobby
 [ghq "https://github.com/splatoonstat"]
+	root = ~/ghq/splatoonstat
+[ghq "https://github.com/inkwavesystem"]
 	root = ~/ghq/splatoonstat
 [pull]
 	rebase = false
