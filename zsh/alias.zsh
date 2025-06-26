@@ -14,6 +14,7 @@ alias co="anyframe-widget-checkout-git-branch"
 alias y="yarn"
 alias yw="yarn workspace"
 alias relogin="exec $SHELL -l"
+alias pn="pnpm"
 
 zle -N open-ghq-repository
 bindkey '^t' open-ghq-repository

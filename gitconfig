@@ -38,7 +38,7 @@
 	rsh = reset --hard
 	s = status
 	ss = status --short
-	st = stash
+	st = stash --include-untracked
 	sta = stash apply
 	stl = stash list
 	stp = stash pop
