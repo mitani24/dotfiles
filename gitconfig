@@ -27,7 +27,7 @@
 	mg = merge
 	pullp = pull --prune
 	pushu = push --set-upstream
-	pushf = push --force-with-lease
+	pushf = push --force-with-lease --force-if-includes
 	re = restore
 	res = restore --staged
 	rb = rebase
@@ -82,3 +82,5 @@
 	root = ~/ghq/splatoonstat
 [pull]
 	rebase = false
+[push]
+	autoSetupRemote = true
