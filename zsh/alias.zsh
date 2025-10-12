@@ -30,8 +30,9 @@ alias cdepdev="git push --force origin HEAD:deploy/dev"
 alias ctoken='auth0 test token "0PZDDaUulV5cknOh1nqykJucQ1mjgAJB" -a https://api.jobaria-dev.cloud/api/ --force -s "profile" --json | jq -r ".access_token"'
 
 # Tools
-alias difit="npx difit --port 5000"
+alias toggl-day="npx toggl-day"
 alias ccu="npx ccusage"
+alias difit="npx difit --port 5000"
 alias ccv="PORT=5001 npx @kimuson/claude-code-viewer"
 
 zle -N open-ghq-repository
