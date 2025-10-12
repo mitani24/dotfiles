@@ -8,6 +8,7 @@ prompt: enabled
 pager:
 # Aliases allow you to create nicknames for gh commands
 aliases:
-    prl: pr list --assignee @me
+    prl: pr list --assignee @me --search "draft:false"
+    prr: pr list --search "is:open review-requested:@me"
     prc: pr create --assignee @me --web
 version: "1"
