@@ -36,6 +36,8 @@ zinit ice wait"0" lucid atload'
     zstyle ":notify:*" always-notify-on-failure no'
 zinit load marzocchi/zsh-notify
 
+export PATH="$HOME/.local/bin:$PATH"
+
 # import fragment files
 ZSH_HOME="${HOME}/.zsh"
 source ${ZSH_HOME}/env.zsh
