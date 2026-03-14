@@ -11,21 +11,22 @@ alias todo-work='todoist list --filter="#work"'
 alias todo-home='todoist list --filter="#home"'
 alias todo-personal='todoist list --filter="#personal"'
 alias co="anyframe-widget-checkout-git-branch"
+alias relogin="exec $SHELL -l"
 alias y="yarn"
 alias yw="yarn workspace"
-alias relogin="exec $SHELL -l"
 alias pn="pnpm"
+alias pnf="pnpm --filter"
 
 # Cateras
-alias cgen="yw bff codegen:local && yw frontend codegen:local"
-alias cgens="yw bff-setup codegen:local && yw frontend-setup codegen:local"
+alias cgen="pnf bff codegen:local && pnf frontend codegen:local"
+alias cgens="pnf bff-setup codegen:local && pnf frontend-setup codegen:local"
 alias clog="dc logs -f"
 alias cupf="dc up -d frontend swagger_ui_api good_job s3mock && clog"
 alias cupfm="dc up -d frontend swagger_ui_api good_job s3mock mock-backend && clog"
 alias cups="dc up -d frontend-setup swagger_ui_setup good_job s3mock && clog"
 alias cupsm="dc up -d frontend-setup swagger_ui_setup good_job s3mock mock-backend-setup && clog"
 alias cupa="dc up -d && clog"
-alias cinit="y bundle && y migrate:reset && y seed"
+alias cinit="pn bundle && pn migrate:reset && pn seed"
 alias cdepdev="git push --force origin HEAD:deploy/dev"
 alias ctoken='auth0 test token "0PZDDaUulV5cknOh1nqykJucQ1mjgAJB" -a https://api.jobaria-dev.cloud/api/ --force -s "profile" --json | jq -r ".access_token"'
 
@@ -33,6 +34,7 @@ alias ctoken='auth0 test token "0PZDDaUulV5cknOh1nqykJucQ1mjgAJB" -a https://api
 alias toggl-day="npx toggl-day"
 alias ccu="npx ccusage"
 alias difit="npx difit --port 5000"
+alias bifit="difit @ "$(gh pr view --json baseRefName -q .baseRefName)""
 alias ccv="PORT=5001 npx @kimuson/claude-code-viewer"
 
 zle -N open-ghq-repository
