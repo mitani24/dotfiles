@@ -1,4 +1,7 @@
 {
+  "permissions": {
+    "allow": []
+  },
   "hooks": {
     "Notification": [
       {
@@ -27,5 +30,17 @@
     "type": "command",
     "command": "npx -y ccusage@latest statusline --visual-burn-rate emoji"
   },
-  "alwaysThinkingEnabled": true
+  "enabledPlugins": {
+    "my-first-plugin@test-marketplace": false,
+    "zenn-articles@jobaria-claude-marketplace": false,
+    "notion-mcp@competency-cloud-marketplace": true,
+    "github-mcp@competency-cloud-marketplace": true,
+    "context7-mcp@competency-cloud-marketplace": true,
+    "playwright-mcp@competency-cloud-marketplace": true,
+    "figma-mcp@competency-cloud-marketplace": true,
+    "notion-ticket@competency-cloud-marketplace": true,
+    "setup-serena-mcp@competency-cloud-marketplace": true,
+    "commit@competency-cloud-marketplace": true,
+    "plugin-dev@competency-cloud-marketplace": true
+  }
 }
